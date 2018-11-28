@@ -5,6 +5,7 @@ import React from 'react';
 export default function Question() {
   return (
     <div className="questionDisplay">
+      Question Display
       {/* Add QuestionStem */}
       {/* Add Timer  */}
       {/* Add Counter */}
