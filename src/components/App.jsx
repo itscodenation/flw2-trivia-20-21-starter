@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        
+        Kahoot!
         {/* Add your question display component */}
         
       </div>
