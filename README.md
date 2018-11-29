@@ -12,7 +12,6 @@ Goal: Set up your project and view the live running app.
  [] Add, commit, and push your changes
  [] to set up your app, in your terminal type `npm install`
  [] to run your app, in your terminal type `npm start` this runs the app in the development mode. Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
- [] Make your site live on gh-pages
  [] Use your planning sheet to create a your component layout.
 
 ====
@@ -85,7 +84,21 @@ Goal: Set up your your components
 ### Day 6 Reacting to User Input
 
 
-### Day 7 Dynamic Redering
+### Day 7 
+ [] Make your site live on gh-pages
+    [] npm install gh-pages --save-dev
+    [] open your package.json file and add both of these
+    ```
+        "homepage": "http://gitname.github.io/react-gh-pages"
+    ```
+    ```
+        "scripts": {
+            //...
+            "predeploy": "npm run build",
+            "deploy": "gh-pages -d build"
+        }
+    ```
+    [] npm run deploy
 
 
 ### Day 8 Work Day
