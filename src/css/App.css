@@ -17,7 +17,7 @@ code {
   text-align: center;
 }
 
-.questionDisplay {
+.question {
   background-color: purple;
   min-height: 100vh;
   display: flex;

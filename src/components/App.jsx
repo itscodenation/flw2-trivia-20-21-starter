@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-// import the question display component
+// import components
 
 class App extends Component {
-  // add your constructor
+  constructor(props) {
+    super(props);
+    this.state = {
 
+    };
+  }
 
   render() {
     return (
       <div className="app">
         Kahoot!
         {/* Add your question display component */}
-        
+
       </div>
     );
   }

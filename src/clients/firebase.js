@@ -5,12 +5,12 @@ const loadDatabase = buildFirebase();
 
 function buildFirebase() {
     const app = firebase.initializeApp({
-      apiKey: "AIzaSyCpc1noPpADSu0vm5AYdUmNSnjEUMt5ZQI",
-      authDomain: "studio2-331cf.firebaseapp.com",
-      databaseURL: "https://studio2-331cf.firebaseio.com",
-      projectId: "studio2-331cf",
-      storageBucket: "studio2-331cf.appspot.com",
-      messagingSenderId: "1016551157105"
+      apiKey: "AIzaSyADAYC7lX5QVEspv8BUeV2uDqrFle8yQpk",
+      authDomain: "studio-trivia-db.firebaseapp.com",
+      databaseURL: "https://studio-trivia-db.firebaseio.com",
+      projectId: "studio-trivia-db",
+      storageBucket: "studio-trivia-db.appspot.com",
+      messagingSenderId: "736024037811"
     });
 
     return once(async() => {
@@ -21,11 +21,13 @@ function buildFirebase() {
 export async function getQuestions() {
   const database = await loadDatabase();
   const questions = await database.ref('/questions').once('value');
+  console.log(questions.val());
   return questions.val();
 }
 
 export async function getRandomQuestion() {
   const questions = await getQuestions();
-  const randomIndex = Math.floor(Math.random() * questions.length);
-  return questions[randomIndex];
+  var keys = Object.keys(questions)
+  const randomIndex = Math.floor(Math.random() * keys.length);
+  return questions[keys[randomIndex]];
 }
