@@ -232,7 +232,7 @@ class App extends Component {
 - [] Using the [Presentaion Guidelines](https://docs.google.com/document/d/1ot54zTTJo7m7dMaN-yTZH6Y-kymEyNSJ4jLzNwLuskg/edit) and [Pitch Rubric](https://docs.google.com/document/d/1an_aanEdOoYftxjqcGB-0IxkW2BVGY5sH5SlJv9weBU/edit) 
 
 ### Extensions!
-- [] Make a timer that stops the game when the timer runs out
+- [] Make a timer that resets the game when the timer runs out
 - [] Make a counter that keeps track of how many times you've guessed the correct answer
 - [] Change the color of the answer buttons when the user guesses. For example turn the button with the correct answer to green.
 - [] Anything else you want!
