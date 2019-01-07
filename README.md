@@ -213,9 +213,9 @@ class App extends Component {
   ```
 
 ### Day 7 Work day and making your site live
-- [] Make your site live on gh-pages
-- [] npm install gh-pages --save-dev
-- [] open your package.json file and add both of these
+- [ ] Make your site live on gh-pages
+- [ ] npm install gh-pages --save-dev
+- [ ] open your package.json file and add both of these
 ```
         "homepage": "http://gitname.github.io/react-gh-pages"
 ```
