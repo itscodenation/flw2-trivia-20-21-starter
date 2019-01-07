@@ -1,19 +1,20 @@
-# Kahoot App!
+# Trivia App!
 
 ## Project Description
 
-For this project we will be building a kahoot app. This project will use firebase to fetch questions and react to diplay questions and answers. 
+For this project we will be building a trivia app. This project will use firebase to fetch questions and react to diplay questions and answers. 
 
 ====
 ### Day 1 Setup and Intro to React
 Goal: Set up your project and view the live running app.
 
-- [x] Go to the repository at https://github.com/ScriptEdcurriculum/kahoot
-- [ ] Fork this repository to your github account and clone to a new workspace
+- [ ] Use your [Outline and Planning Doc](https://docs.google.com/document/d/1oiyYdTcO2RxbE-2yq5KmeZpthExzHCNrgrVGtT47yOg/edit) plan your project.
+- [ ] Go to the repository at https://github.com/ScriptEdcurriculum/trivia
+- [ ] Fork the repository to your github account and clone to a new workspace
 - [ ] Add, commit, and push your changes
-- [ ] to set up your app, in your terminal type `npm install`
-- [ ] to run your app, in your terminal type `npm start` this runs the app in the development mode. Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- [ ] Use your planning sheet to create a your component layout.
+- [ ] To set up your app, in your terminal type `npm install`
+- [ ] To run your app, in your terminal type `npm start` this runs the app in the development mode. Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [] Use any remaining time to style your app in App.css
 
 ====
 ### Day 2 Creating Components and Component Layout
@@ -22,7 +23,7 @@ Goal: Set up your your components
 - [ ] In your App.jsx file import the Question Component
 - [ ] Inside the render function call your Question component
 - [ ] Using the Question.jsx as a template create three more components called AnswerButton.jsx, QuestionText.jsx and ResetButton.jsx
-- [ ] In your Question.jsx file import your QuestionText, AnswerButton and ResetButton. In the spaces provided call each of the components. (You should have 4 AnswerButtons)
+- [ ] In your Question.jsx file import your QuestionText, AnswerButton and ResetButton. Call each of the components in the render function. (You should have 4 AnswerButtons)
 - [ ] The QuestionText should render a div with the text of any question of your choosing
 - [ ] The AnswerButton should should render a div with the text of any question of your choosing
 - [ ] The ResetButton should should render a div with the text "Reset"
@@ -89,7 +90,7 @@ class App extends Component {
     />
 ```
 
-- [ ] Complete for each of your answer choices. 
+- [ ] Follow the same pattern to pass down state to each of your answer choices. 
 
 - [ ] Last we want to grab a new question when the page loads we need to write a firebase function in the the constuctor.
 
@@ -213,21 +214,25 @@ class App extends Component {
 
 ### Day 7 Work day and making your site live
 - [] Make your site live on gh-pages
-    [] npm install gh-pages --save-dev
-    [] open your package.json file and add both of these
-    ```
+- [] npm install gh-pages --save-dev
+- [] open your package.json file and add both of these
+```
         "homepage": "http://gitname.github.io/react-gh-pages"
-    ```
-    ```
+```
+```
         "scripts": {
             //...
             "predeploy": "npm run build",
             "deploy": "gh-pages -d build"
         }
-    ```
-    [] npm run deploy
-- [ ] Use the remaining time to style yourp
-
+```
+- [ ] npm run deploy
 
 ### Day 8 Presentation Preperation Day
-- 
+- [] Using the [Presentaion Guidelines](https://docs.google.com/document/d/1ot54zTTJo7m7dMaN-yTZH6Y-kymEyNSJ4jLzNwLuskg/edit) and [Pitch Rubric](https://docs.google.com/document/d/1an_aanEdOoYftxjqcGB-0IxkW2BVGY5sH5SlJv9weBU/edit) 
+
+### Extensions!
+- [] Make a timer that stops the game when the timer runs out
+- [] Make a counter that keeps track of how many times you've guessed the correct answer
+- [] Change the color of the answer buttons when the user guesses. For example turn the button with the correct answer to green.
+- [] Anything else you want!
