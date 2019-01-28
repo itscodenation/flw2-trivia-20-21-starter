@@ -3,9 +3,7 @@ import React, { Component } from "react";
 
 class Answer extends Component {
   render() {
-    return (
-      <div>Add your QuestionText, Reset Button and AnswerButtons here.</div>
-    );
+    return <div>19</div>;
   }
 }
 
