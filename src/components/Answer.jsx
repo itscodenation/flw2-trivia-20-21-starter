@@ -7,4 +7,4 @@ class Answer extends Component {
   }
 }
 
-export default Question;
+export default Answer;

@@ -3,8 +3,8 @@ import React, { Component } from "react";
 
 class QuestionText extends Component {
   render() {
+
     return <div>what is 9 + 10 ?</div>;
   }
 }
-
-export default Question;
+export default QuestionText;
