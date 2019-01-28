@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // import components
 
-
 class Reset extends Component {
-  
   render() {
-    return (
-      <div>
-        Add your QuestionText, Reset Button and AnswerButtons here.  
-      </div>
-    );
+    return <div>Reset</div>;
   }
 }
 
-export default Question;
+export default Reset;

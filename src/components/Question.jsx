@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import QuestionText from "./QuestionText.jsx";
+import Reset from "./Reset.jsx";
+import Answer from "./Answer.jsx";
+
 // import components
 
-
 class Question extends Component {
-  
   render() {
     return (
       <div>
-        Add your QuestionText, Reset Button and AnswerButtons here.  
+        <QuestionText />
+        <Answer />
+        <Answer />
+        <Answer />
+        <Answer />
+        <Reset />
       </div>
     );
   }
