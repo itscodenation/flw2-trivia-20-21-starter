@@ -3,8 +3,7 @@ import React, { Component } from "react";
 
 class QuestionText extends Component {
   render() {
-
-    return <div>what is 9 + 10 ?</div>;
+    return <div>{this.props.questiontext}</div>;
   }
 }
 export default QuestionText;

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 // import components
-
 class Answer extends Component {
   render() {
-    return <div>19</div>;
+    return <div>{this.props.answertext}</div>;
   }
 }
 
