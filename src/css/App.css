@@ -3,9 +3,68 @@ body {
   padding: 0;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url("https://66.media.tumblr.com/b55d9e74fd24edfb64a46749adc5333f/tumblr_osyz6iqRA31uzwgsuo1_400.gif");
+  /*background-color: #ff6961;*/
+  background-image: url("https://66.media.tumblr.com/297fb66179f6a53bd76caefc32dae5ae/tumblr_njqjakaON11u3ji4yo1_500.gif");
 }
 
 .app {
   text-align: center;
+}
+
+#TrivieLogo {
+  left: 35%;
+  width: 30%;
+  height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: contrast(2);
+}
+
+#TrivieLogo:hover {
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: blur(1px);
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(2deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-3deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(3deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(2deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(3deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-3deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(5deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-3deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(3deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(2deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-3deg);
+  }
+}
+
+#Question {
+  width: 20%;
+  height: 20%;
+  color: #ffffff;
 }

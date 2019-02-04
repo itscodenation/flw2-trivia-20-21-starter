@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 // import components
+import "../css/Answer.css";
 
-var answerArray = [];
 class Answer extends Component {
   render() {
-    for (var i = 0; i < answerArray.length; i++) {
-      <div class="answer">
-        <p class="answerText">answerArray[i];</p>
-      </div>;
-    }
-
-    return <div />;
+    return (
+      <div className="Answer">
+        <p>{this.props.name}</p>
+      </div>
+    );
   }
 }
