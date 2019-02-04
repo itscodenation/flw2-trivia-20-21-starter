@@ -9,15 +9,29 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      questions: {},
+      currentQuestion: {
+        question_text: "Question",
+        choices: [],
+        correct_choice_index: null
+      }
+    };
+
     firebaseDatabase.ref("/questions").on("value", snapshot => {
-      console.log(snapshot.val());
+      let questions = snapshot.val();
+      //let randomQuestion = getRandomQuestion(questions)
+      this.setState({
+        questions: questions
+        //currentQuestion: randomQuestion,
+      });
     });
   }
 
   render() {
     return (
       <div className="app">
-        <Question test={this.state.currentQuestion} />
+        <Question />
       </div>
     );
   }

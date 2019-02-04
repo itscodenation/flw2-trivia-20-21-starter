@@ -13,20 +13,20 @@ class Question extends Component {
           <ResetButton />
         </div>
         <div className="div3">
-          <QuestionText question={this.props.test.question_text} />
+          <QuestionText question={"this.props.test.question_text"} />
         </div>
         <div className="div4">
           <div className="div5">
-            <AnswerButton letter="A" answer={this.props.test.choices[0]} />
+            <AnswerButton letter="A" answer={"this.props.test.choices[0]"} />
           </div>
           <div className="div6">
-            <AnswerButton letter="B" answer={this.props.test.choices[1]} />
+            <AnswerButton letter="B" answer={"this.props.test.choices[1]"} />
           </div>
           <div className="div7">
-            <AnswerButton letter="C" answer={this.props.test.choices[2]} />
+            <AnswerButton letter="C" answer={"this.props.test.choices[2]"} />
           </div>
           <div className="div8">
-            <AnswerButton letter="D" answer={this.props.test.choices[3]} />
+            <AnswerButton letter="D" answer={"this.props.test.choices[3]"} />
           </div>
         </div>
       </div>
