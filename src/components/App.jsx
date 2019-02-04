@@ -1,21 +1,17 @@
 import React, { Component } from "react";
 import "../css/App.css";
 import Question from "./Question.jsx";
-
+import { buildFirebase } from "../clients/firebase";
 // import components
+var firebaseDatabase = buildFirebase();
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      questions: {},
-      currentQuestion: {
-        question_text: "Question",
-        choices: ["1", "2", "3", "4"],
-        correct_choice_index: 3
-      }
-    };
+    firebaseDatabase.ref("/questions").on("value", snapshot => {
+      console.log(snapshot.val());
+    });
   }
 
   render() {
