@@ -7,9 +7,12 @@ class App extends Component {
     super(props);
     this.state = {
       currentQuestion: {
+
+
         questiontext:
           "hksdfh bsfhgg wbrgi sdfgjootyb sdfbropwhgheergt bjhbuui?",
         answers: ["ptoyjdeerwetf", "kkfgb", "sdfg", "sdfgsdf"]
+
       }
     };
   }
