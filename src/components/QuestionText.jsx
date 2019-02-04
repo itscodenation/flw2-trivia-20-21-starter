@@ -6,5 +6,4 @@ class QuestionText extends Component {
     return <div>{this.props.questiontext}</div>;
   }
 }
-
 export default QuestionText;
