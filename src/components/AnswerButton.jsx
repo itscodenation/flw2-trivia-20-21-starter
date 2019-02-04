@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import "../css/App.css";
-// import components
-import Question from "./Question.jsx";
-class App extends Component {
+
+class AnswerButton extends Component {
   render() {
     return (
       <div className="app">
-        Trivia!
-        <Question text="question1" />
+        <div>Answer 1</div>
+        {this.props.answerchoice}
       </div>
     );
   }
 }
-export default App;
+export default AnswerButton;
