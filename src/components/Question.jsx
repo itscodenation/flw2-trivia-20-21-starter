@@ -9,11 +9,11 @@ class Question extends Component {
   render() {
     return (
       <div>
-        <QuestionText questiontext={"can cats fly?"} />
-        <Answer answertext={"a"} />
-        <Answer answertext={"b"} />
-        <Answer answertext={"c"} />
-        <Answer answertext={"d"} />
+        <QuestionText questiontext={this.props.currentQuestion.questiontext} />
+        <Answer answertext={this.props.currentQuestion.answers[0]} />
+        <Answer answertext={this.props.currentQuestion.answers[1]} />
+        <Answer answertext={this.props.currentQuestion.answers[2]} />
+        <Answer answertext={this.props.currentQuestion.answers[3]} />
         <Reset />
       </div>
     );
