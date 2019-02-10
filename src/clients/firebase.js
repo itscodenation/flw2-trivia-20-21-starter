@@ -1,6 +1,7 @@
 import firebase from 'firebase';
 
 export function buildFirebase() {
+  if (firebase.apps.length === 0) {
     const app = firebase.initializeApp({
       apiKey: "AIzaSyADAYC7lX5QVEspv8BUeV2uDqrFle8yQpk",
       authDomain: "studio-trivia-db.firebaseapp.com",
@@ -10,6 +11,9 @@ export function buildFirebase() {
       messagingSenderId: "736024037811"
     });
     return firebase.database(app);
+  } else {
+    return firebase.apps[0].database();
+  }
 }
 
 export function getRandomQuestion(questions) {
