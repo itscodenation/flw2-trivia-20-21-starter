@@ -1,7 +1,7 @@
 import firebase from "firebase";
 
 export function buildFirebase() {
-  let app;
+
   if (firebase.apps.length === 0) {
     const app = firebase.initializeApp({
       apiKey: "AIzaSyADAYC7lX5QVEspv8BUeV2uDqrFle8yQpk",
@@ -11,10 +11,11 @@ export function buildFirebase() {
       storageBucket: "studio-trivia-db.appspot.com",
       messagingSenderId: "736024037811"
     });
+
+    return firebase.database(app);
   } else {
-    app = firebase.apps[0];
+    return firebase.apps[0].database();
   }
-  return firebase.database(app);
 }
 
 export function getRandomQuestion(questions) {
