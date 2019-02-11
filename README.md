@@ -98,14 +98,14 @@ class App extends Component {
    constructor(props) {
     super(props); 
 
-    firebaseDatabase.ref('/questions').on('value', (snapshot)=> {
+    firebaseDatabase.ref('/questions').once('value').then(snapshot=> {
       console.log(snapshot.val())
     });
 ```
 - [ ] use this.setState to change the state.
 
 ```
-    firebaseDatabase.ref('/questions').on('value', (snapshot)=> {
+    firebaseDatabase.ref('/questions').once('value').then(snapshot=> {
         let questions = snapshot.val();
         let randomQuestion = getRandomQuestion(questions)
         this.setState({
@@ -114,7 +114,7 @@ class App extends Component {
         })
     });
 ```
-- [ ] Reload the page to see your conent change.
+- [ ] Reload the page to see your content change.
 
 
 ### Day 5 Reacting to user click
