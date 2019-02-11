@@ -106,7 +106,7 @@ class App extends Component {
 
 ```
     firebaseDatabase.ref('/questions').on('value', (snapshot)=> {
-        lets questions = snaphot.val();
+        let questions = snapshot.val();
         let randomQuestion = getRandomQuestion(questions)
         this.setState({
             questions: questions,
