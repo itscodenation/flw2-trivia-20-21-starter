@@ -32,11 +32,19 @@ class App extends Component {
         console.log(this.state);
       });
   }
-
+  _onAnswerButtonClicked() {
+    console.log("Hit");
+    this.setState({
+      shouldDisplayAnswer: true
+    });
+  }
   render() {
     return (
       <div className="app">
-        <Question test={this.state.currentQuestion} />
+        <Question
+          test={this.state.currentQuestion}
+          answerButtonClicked={() => this._onAnswerButtonClicked()}
+        />
       </div>
     );
   }

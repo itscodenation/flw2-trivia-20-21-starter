@@ -17,16 +17,32 @@ class Question extends Component {
         </div>
         <div className="div4">
           <div className="div5">
-            <AnswerButton letter="A" answer={this.props.test.choices[0]} />
+            <AnswerButton
+              letter="A"
+              answer={this.props.test.choices[0]}
+              answerButtonClicked={() => this._onAnswerButtonClicked()}
+            />
           </div>
           <div className="div6">
-            <AnswerButton letter="B" answer={this.props.test.choices[1]} />
+            <AnswerButton
+              letter="B"
+              answer={this.props.test.choices[1]}
+              answerButtonClicked={() => this._onAnswerButtonClicked()}
+            />
           </div>
           <div className="div7">
-            <AnswerButton letter="C" answer={this.props.test.choices[2]} />
+            <AnswerButton
+              letter="C"
+              answer={this.props.test.choices[2]}
+              answerButtonClicked={() => this._onAnswerButtonClicked()}
+            />
           </div>
           <div className="div8">
-            <AnswerButton letter="D" answer={this.props.test.choices[3]} />
+            <AnswerButton
+              letter="D"
+              answer={this.props.test.choices[3]}
+              answerButtonClicked={() => this._onAnswerButtonClicked()}
+            />
           </div>
         </div>
       </div>
