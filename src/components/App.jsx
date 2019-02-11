@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../css/App.css";
 import Question from "./Question.jsx";
 import { buildFirebase } from "../clients/firebase";
+import { getRandomQuestion } from "../clients/firebase";
 // import components
 var firebaseDatabase = buildFirebase();
 
@@ -18,20 +19,24 @@ class App extends Component {
       }
     };
 
-    firebaseDatabase.ref("/questions").on("value", snapshot => {
-      let questions = snapshot.val();
-      //let randomQuestion = getRandomQuestion(questions)
-      this.setState({
-        questions: questions
-        //currentQuestion: randomQuestion,
+    firebaseDatabase
+      .ref("/questions")
+      .once("value")
+      .then(snapshot => {
+        let questions = snapshot.val();
+        let randomQuestion = getRandomQuestion(questions);
+        this.setState({
+          questions: questions,
+          currentQuestion: randomQuestion
+        });
+        console.log(this.state);
       });
-    });
   }
 
   render() {
     return (
       <div className="app">
-        <Question />
+        <Question test={this.state.currentQuestion} />
       </div>
     );
   }
