@@ -98,14 +98,14 @@ class App extends Component {
    constructor(props) {
     super(props); 
 
-    firebaseDatabase.ref('/questions').once('value').then(snapshot=> {
+    firebaseDatabase.ref('/questions').on('value', (snapshot)=> {
       console.log(snapshot.val())
     });
 ```
 - [ ] use this.setState to change the state.
 
 ```
-    firebaseDatabase.ref('/questions').once('value').then(snapshot=> {
+    firebaseDatabase.ref('/questions').on('value', (snapshot)=> {
         let questions = snapshot.val();
         let randomQuestion = getRandomQuestion(questions)
         this.setState({
