@@ -29,7 +29,6 @@ class App extends Component {
           questions: questions,
           currentQuestion: randomQuestion
         });
-        console.log(this.state);
       });
   }
   _onAnswerButtonClicked() {
@@ -38,12 +37,26 @@ class App extends Component {
       shouldDisplayAnswer: true
     });
   }
+  _onResetButtonClicked() {
+    let randomQuestion = getRandomQuestion(this.state.questions);
+    this.setState({
+      currentQuestion: randomQuestion,
+      shouldDisplayAnswer: false
+    });
+  }
   render() {
     return (
       <div className="app">
         <Question
           test={this.state.currentQuestion}
           answerButtonClicked={() => this._onAnswerButtonClicked()}
+          resetButtonClicked={() => this._onResetButtonClicked()}
+          shouldDisplayAnswer={this.state.shouldDisplayAnswer}
+          correctAnswer={
+            this.state.currentQuestion.choices[
+              this.state.currentQuestion.correct_choice_index
+            ]
+          }
         />
       </div>
     );

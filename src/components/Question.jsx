@@ -10,38 +10,42 @@ class Question extends Component {
     return (
       <div className="div1">
         <div className="div2">
-          <ResetButton />
+          <ResetButton resetButtonClicked={this.props.resetButtonClicked} />
         </div>
         <div className="div3">
-          <QuestionText question={this.props.test.question_text} />
+          <QuestionText
+            correctAnswer={this.props.correctAnswer}
+            shouldDisplayAnswer={this.props.shouldDisplayAnswer}
+            question={this.props.test.question_text}
+          />
         </div>
         <div className="div4">
           <div className="div5">
             <AnswerButton
               letter="A"
               answer={this.props.test.choices[0]}
-              answerButtonClicked={() => this._onAnswerButtonClicked()}
+              answerButtonClicked={this.props.answerButtonClicked}
             />
           </div>
           <div className="div6">
             <AnswerButton
               letter="B"
               answer={this.props.test.choices[1]}
-              answerButtonClicked={() => this._onAnswerButtonClicked()}
+              answerButtonClicked={this.props.answerButtonClicked}
             />
           </div>
           <div className="div7">
             <AnswerButton
               letter="C"
               answer={this.props.test.choices[2]}
-              answerButtonClicked={() => this._onAnswerButtonClicked()}
+              answerButtonClicked={this.props.answerButtonClicked}
             />
           </div>
           <div className="div8">
             <AnswerButton
               letter="D"
               answer={this.props.test.choices[3]}
-              answerButtonClicked={() => this._onAnswerButtonClicked()}
+              answerButtonClicked={this.props.answerButtonClicked}
             />
           </div>
         </div>

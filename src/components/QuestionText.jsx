@@ -4,9 +4,16 @@ import React, { Component } from "react";
 
 class QuestionText extends Component {
   render() {
+    let display;
+    if (this.props.shouldDisplayAnswer) {
+      display = "The correct answer is " + this.props.correctAnswer;
+    } else {
+      display = this.props.question;
+    }
+
     return (
       <div className="QuestionText.jsx">
-        <h3>{this.props.question}</h3>
+        <h3>{display}</h3>
       </div>
     );
   }
