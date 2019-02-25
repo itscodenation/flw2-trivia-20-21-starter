@@ -22,6 +22,8 @@ class Question extends Component {
         <div className="div4">
           <div className="div5">
             <AnswerButton
+              correctIndex={this.props.test.correct_choice_index}
+              value="0"
               letter="A"
               answer={this.props.test.choices[0]}
               answerButtonClicked={this.props.answerButtonClicked}
@@ -29,6 +31,8 @@ class Question extends Component {
           </div>
           <div className="div6">
             <AnswerButton
+              correctIndex={this.props.test.correct_choice_index}
+              value="1"
               letter="B"
               answer={this.props.test.choices[1]}
               answerButtonClicked={this.props.answerButtonClicked}
@@ -36,6 +40,8 @@ class Question extends Component {
           </div>
           <div className="div7">
             <AnswerButton
+              correctIndex={this.props.test.correct_choice_index}
+              value="2"
               letter="C"
               answer={this.props.test.choices[2]}
               answerButtonClicked={this.props.answerButtonClicked}
@@ -43,6 +49,8 @@ class Question extends Component {
           </div>
           <div className="div8">
             <AnswerButton
+              correctIndex={this.props.test.correct_choice_index}
+              value="3"
               letter="D"
               answer={this.props.test.choices[3]}
               answerButtonClicked={this.props.answerButtonClicked}
