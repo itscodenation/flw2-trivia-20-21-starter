@@ -36,6 +36,7 @@ class App extends Component {
     this.setState({
       shouldDisplayAnswer: true
     });
+    
   }
   _onResetButtonClicked() {
     let randomQuestion = getRandomQuestion(this.state.questions);
