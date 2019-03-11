@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import App from "./App.jsx";
+import "../css/App.css";
 // import components
 
 class AnswerButton extends Component {
@@ -12,17 +13,21 @@ class AnswerButton extends Component {
     }
     let Acolor;
     if (this.props.shouldDisplayAnswer) {
-      if (this.props.value == this.props.correctIndex){
-      Acolor = "Green";
-      }else{
+      if (this.props.value == this.props.correctIndex) {
+        Acolor = "Green";
+      } else {
         Acolor = "Red";
       }
     } else {
-      Acolor ="White";
+      Acolor = "black";
     }
     return (
-      <div  className="AnswerButton" onClick={this.props.answerButtonClicked}>
-        <button style={{color:Acolor}} className="answerChoice" value={this.props.value}>
+      <div className="AnswerButton" onClick={this.props.answerButtonClicked}>
+        <button
+          style={{ color: Acolor }}
+          className="answerChoice"
+          value={this.props.value}
+        >
           {this.props.letter}: {this.props.answer}
         </button>
       </div>

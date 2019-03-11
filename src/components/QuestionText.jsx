@@ -12,7 +12,7 @@ class QuestionText extends Component {
     }
 
     return (
-      <div className="QuestionText.jsx">
+      <div style={{ color: "White" }} className="QuestionText.jsx">
         <h3>{display}</h3>
       </div>
     );

@@ -1,10 +1,20 @@
 body {
+  position: relative;
   margin: 0;
   padding: 0;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Images-Samsung-Wallpaper.jpg");
+  height: 700px;
+  width: 100%;
+  background-size: 100% 100%;
+  object-fit: cover;
 }
 
 .app {
   text-align: center;
+  font-size: 25px;
+  font-family: "Indie Flower", cursive;
 }
-
-
+.answerChoice {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+}
