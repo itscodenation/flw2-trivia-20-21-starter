@@ -44,7 +44,14 @@ class App extends Component {
       shouldDisplayAnswer: false
     });
   }
+
   render() {
+    let test = true;
+
+    if (test) {
+      //setInterval(function () { alert("Times Up"); }, 3000);
+      test = false;
+    }
     return (
       <div className="app">
         <Question
