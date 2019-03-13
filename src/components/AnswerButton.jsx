@@ -5,13 +5,16 @@ import "../css/App.css";
 
 class AnswerButton extends Component {
   render() {
-    console.log(this.props.correctIndex);
     var value = this.props.value;
+
     value = parseInt(value);
+
     if (value === this.props.correctIndex) {
       console.log(value + " is correct one");
     }
+
     let Acolor;
+
     if (this.props.shouldDisplayAnswer) {
       if (this.props.value == this.props.correctIndex) {
         Acolor = "Green";
@@ -21,8 +24,12 @@ class AnswerButton extends Component {
     } else {
       Acolor = "black";
     }
+
     return (
-      <div className="AnswerButton" onClick={this.props.answerButtonClicked}>
+      <div
+        className="AnswerButton"
+        onClick={() => this.props.answerButtonClicked(this.props.value)}
+      >
         <button
           style={{ color: Acolor }}
           className="answerChoice"

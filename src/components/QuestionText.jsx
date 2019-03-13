@@ -5,8 +5,13 @@ import React, { Component } from "react";
 class QuestionText extends Component {
   render() {
     let display;
+
     if (this.props.shouldDisplayAnswer) {
-      display = "The correct answer is " + this.props.correctAnswer;
+      if (this.props.userIsCorrect) {
+        display = "You chose the correct answer!";
+      } else {
+        display = "The correct answer is " + this.props.correctAnswer;
+      }
     } else {
       display = this.props.question;
     }

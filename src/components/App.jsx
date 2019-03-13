@@ -12,6 +12,7 @@ class App extends Component {
 
     this.state = {
       questions: {},
+      userIsCorrect: false,
       currentQuestion: {
         question_text: "Question",
         choices: [],
@@ -31,34 +32,43 @@ class App extends Component {
         });
       });
   }
-  _onAnswerButtonClicked() {
-    console.log("Hit");
+  _onAnswerButtonClicked(btnValue) {
+    //console.log("This button you clicked " + parseInt(btnValue));
+    //console.log("Correct Answer " + this.state.currentQuestion.correct_choice_index);
+    let status = false;
+    if (
+      parseInt(btnValue) === this.state.currentQuestion.correct_choice_index
+    ) {
+      status = true;
+    } else {
+      status = false;
+    }
+
     this.setState({
-      shouldDisplayAnswer: true
+      shouldDisplayAnswer: true,
+      userIsCorrect: status
     });
   }
   _onResetButtonClicked() {
     let randomQuestion = getRandomQuestion(this.state.questions);
     this.setState({
       currentQuestion: randomQuestion,
-      shouldDisplayAnswer: false
+      shouldDisplayAnswer: false,
+      userIsCorrect: false
     });
   }
 
   render() {
     let test = true;
 
-    if (test) {
-      //setInterval(function () { alert("Times Up"); }, 3000);
-      test = false;
-    }
     return (
       <div className="app">
         <Question
           test={this.state.currentQuestion}
-          answerButtonClicked={() => this._onAnswerButtonClicked()}
+          answerButtonClicked={id => this._onAnswerButtonClicked(id)}
           resetButtonClicked={() => this._onResetButtonClicked()}
           shouldDisplayAnswer={this.state.shouldDisplayAnswer}
+          userIsCorrect={this.state.userIsCorrect}
           correctAnswer={
             this.state.currentQuestion.choices[
               this.state.currentQuestion.correct_choice_index

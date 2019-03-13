@@ -12,11 +12,13 @@ class Question extends Component {
         <div className="div2">
           <ResetButton resetButtonClicked={this.props.resetButtonClicked} />
         </div>
+
         <div className="div3">
           <QuestionText
             correctAnswer={this.props.correctAnswer}
             shouldDisplayAnswer={this.props.shouldDisplayAnswer}
             question={this.props.test.question_text}
+            userIsCorrect={this.props.userIsCorrect}
           />
         </div>
         <div className="div4">
