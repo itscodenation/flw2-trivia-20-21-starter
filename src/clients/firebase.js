@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 export function buildFirebase() {
   if (firebase.apps.length === 0) {
@@ -17,7 +17,7 @@ export function buildFirebase() {
 }
 
 export function getRandomQuestion(questions) {
-  var keys = Object.keys(questions)
+  var keys = Object.keys(questions);
   const randomIndex = Math.floor(Math.random() * keys.length);
   return questions[keys[randomIndex]];
 }
