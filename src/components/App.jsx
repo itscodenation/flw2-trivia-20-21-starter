@@ -31,12 +31,14 @@ class App extends Component {
   }
 
   render() {
+    if (!this.state.question) { return null; }
+
     return (
       <div className="app">
         <h1>Trivia!</h1>
-        { this.state.question &&
-          this.state.question.question_text
-        }
+        <Question
+          question={this.state.question}
+        />
       </div>
     );
   }
