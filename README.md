@@ -9,7 +9,7 @@ For this project we will be building a trivia app. This project will use firebas
 Goal: Set up your project and view the live running app.
 
 - [ ] Use your [Outline and Planning Doc](https://docs.google.com/document/d/1oiyYdTcO2RxbE-2yq5KmeZpthExzHCNrgrVGtT47yOg/edit) plan your project.
-- [ ] Go to the repository at https://github.com/ScriptEdcurriculum/trivia
+- [ ] Go to the repository at https://github.com/itscodenation/trivia
 - [ ] Fork the repository to your github account and clone to a new workspace
 - [ ] Add, commit, and push your changes
 - [ ] To set up your app, in your terminal type `npm install`
