@@ -5,7 +5,7 @@
 For this project, we will be building a trivia app. This project will use firebase to fetch questions and react to diplay questions and answers. 
 
 ====
-### Day 1 Setup and Intro to React
+### Day 1: Setup and Intro to React
 Goal: Set up your project,  view the live running app, and build a simple component.
 
 - [ ] Use your [Outline and Planning Doc](https://docs.google.com/document/d/1oiyYdTcO2RxbE-2yq5KmeZpthExzHCNrgrVGtT47yOg/edit) to plan your project.
@@ -17,7 +17,7 @@ Goal: Set up your project,  view the live running app, and build a simple compon
 - [] Use any remaining time to begin working on your project.
 
 ====
-### Day 2 Creating an Object using ES6 Syntax
+### Day 2: Creating an Object using ES6 Syntax
 Goal: Set up your your components
 
 - [ ] In your App.jsx file import the Question Component
@@ -29,7 +29,7 @@ Goal: Set up your your components
 - [ ] The ResetButton should should render a div with the text "Reset"
 - [ ] Style these in any way you choose.
 
-### Day 3 Use Multiple Components to Create Complex Layout
+### Day 3: Use Multiple Components to Create Complex Layout
 - [ ] Now that we have this, we can pass down the questions to other components using props. In your App.jsx let add a prop to the Question component and pass it the currentQuestion from state.
 ```
     < Question
@@ -54,7 +54,7 @@ Goal: Set up your your components
 
 - [ ] Use your remaining time to style your project
 
-### Day 4 Persist and Read Complex Data from Firebase
+### Day 4: Persist and Read Complex Data from Firebase
 Now that we have props that we can pass down we need a way to store/ keep track of props if we change them. Thats where we can use state.
 
 - [ ] In your App.jsx file lets add a constructor method directly inside your App component
@@ -117,7 +117,7 @@ class App extends Component {
 - [ ] Reload the page to see your content change.
 
 
-### Day 5 Pass Down Properties Through Components
+### Day 5: Pass Down Properties Through Components
 - [ ] Create a new function that when you click on an AnswerButton component changes the questionText to display the correct answer.
  ```
   _onAnswerButtonClicked(){
@@ -176,7 +176,7 @@ class App extends Component {
   );
   ```
 
-### Day 6 Create Components to React to a User's Input and Update Application State 
+### Day 6: Create Components to React to a User's Input and Update Application State 
 
 - [ ] In your App.jsx create a method function call  _onResetButtonClicked(). When this function is called it will set the current question to a new question.
  ```
@@ -212,7 +212,7 @@ class App extends Component {
     );
   ```
 
-### Day 7 Work day and making your site live
+### Day 7: Work day and making your site live
 - [ ] Make your site live on gh-pages
 - [ ] npm install gh-pages --save-dev
 - [ ] open your package.json file and add both of these
@@ -228,7 +228,7 @@ class App extends Component {
 ```
 - [ ] npm run deploy
 
-### Day 8 Presentation Preperation Day
+### Day 8: Presentation Preperation Day
 - [] Using the [Presentaion Guidelines](https://docs.google.com/document/d/1ot54zTTJo7m7dMaN-yTZH6Y-kymEyNSJ4jLzNwLuskg/edit) and [Pitch Rubric](https://docs.google.com/document/d/1an_aanEdOoYftxjqcGB-0IxkW2BVGY5sH5SlJv9weBU/edit) 
 
 ### Extensions!
