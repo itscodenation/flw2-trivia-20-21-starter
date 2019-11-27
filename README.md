@@ -14,7 +14,7 @@ Goal: Set up your project,  view the live running app, and build a simple compon
 - [ ] Add, commit, and push your changes
 - [ ] To set up your app, in your terminal type `npm install`
 - [ ] To run your app, in your terminal type `npm start` this runs the app in the development mode. Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- [] Use any remaining time to begin working on your project.
+- [ ] Use any remaining time to begin working on your project.
 
 ====
 ### Day 2: Creating an Object using ES6 Syntax
@@ -229,10 +229,10 @@ class App extends Component {
 - [ ] npm run deploy
 
 ### Day 8: Presentation Preperation Day
-- [] Using the [Presentaion Guidelines](https://docs.google.com/document/d/1ot54zTTJo7m7dMaN-yTZH6Y-kymEyNSJ4jLzNwLuskg/edit) and [Pitch Rubric](https://docs.google.com/document/d/1an_aanEdOoYftxjqcGB-0IxkW2BVGY5sH5SlJv9weBU/edit) 
+- [ ] Using the [Presentaion Guidelines](https://docs.google.com/document/d/1ot54zTTJo7m7dMaN-yTZH6Y-kymEyNSJ4jLzNwLuskg/edit) and [Pitch Rubric](https://docs.google.com/document/d/1an_aanEdOoYftxjqcGB-0IxkW2BVGY5sH5SlJv9weBU/edit) 
 
 ### Extensions!
-- [] Make a timer that resets the game when the timer runs out
-- [] Make a counter that keeps track of how many times you've guessed the correct answer
-- [] Change the color of the answer buttons when the user guesses. For example turn the button with the correct answer to green.
-- [] Anything else you want!
+- [ ] Make a timer that resets the game when the timer runs out
+- [ ] Make a counter that keeps track of how many times you've guessed the correct answer
+- [ ] Change the color of the answer buttons when the user guesses. For example turn the button with the correct answer to green.
+- [ ] Anything else you want!
