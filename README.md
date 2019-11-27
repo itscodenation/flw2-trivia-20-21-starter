@@ -2,22 +2,22 @@
 
 ## Project Description
 
-For this project we will be building a trivia app. This project will use firebase to fetch questions and react to diplay questions and answers. 
+For this project, we will be building a trivia app. This project will use firebase to fetch questions and react to diplay questions and answers. 
 
 ====
 ### Day 1 Setup and Intro to React
-Goal: Set up your project and view the live running app.
+Goal: Set up your project,  view the live running app, and build a simple component.
 
-- [ ] Use your [Outline and Planning Doc](https://docs.google.com/document/d/1oiyYdTcO2RxbE-2yq5KmeZpthExzHCNrgrVGtT47yOg/edit) plan your project.
+- [ ] Use your [Outline and Planning Doc](https://docs.google.com/document/d/1oiyYdTcO2RxbE-2yq5KmeZpthExzHCNrgrVGtT47yOg/edit) to plan your project.
 - [ ] Go to the repository at https://github.com/itscodenation/trivia
 - [ ] Fork the repository to your github account and clone to a new workspace
 - [ ] Add, commit, and push your changes
 - [ ] To set up your app, in your terminal type `npm install`
 - [ ] To run your app, in your terminal type `npm start` this runs the app in the development mode. Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- [] Use any remaining time to style your app in App.css
+- [] Use any remaining time to begin working on your project.
 
 ====
-### Day 2 Creating Components and Component Layout
+### Day 2 Creating an Object using ES6 Syntax
 Goal: Set up your your components
 
 - [ ] In your App.jsx file import the Question Component
@@ -29,7 +29,7 @@ Goal: Set up your your components
 - [ ] The ResetButton should should render a div with the text "Reset"
 - [ ] Style these in any way you choose.
 
-### Day 3 Passing Down Props to components
+### Day 3 Use Multiple Components to Create Complex Layout
 - [ ] Now that we have this, we can pass down the questions to other components using props. In your App.jsx let add a prop to the Question component and pass it the currentQuestion from state.
 ```
     < Question
@@ -54,7 +54,7 @@ Goal: Set up your your components
 
 - [ ] Use your remaining time to style your project
 
-### Day 4 Updating State
+### Day 4 Persist and Read Complex Data from Firebase
 Now that we have props that we can pass down we need a way to store/ keep track of props if we change them. Thats where we can use state.
 
 - [ ] In your App.jsx file lets add a constructor method directly inside your App component
@@ -117,7 +117,7 @@ class App extends Component {
 - [ ] Reload the page to see your content change.
 
 
-### Day 5 Reacting to user click
+### Day 5 Pass Down Properties Through Components
 - [ ] Create a new function that when you click on an AnswerButton component changes the questionText to display the correct answer.
  ```
   _onAnswerButtonClicked(){
@@ -176,7 +176,7 @@ class App extends Component {
   );
   ```
 
-### Day 6 More Functions and Conditional Rendering
+### Day 6 Create Components to React to a User's Input and Update Application State 
 
 - [ ] In your App.jsx create a method function call  _onResetButtonClicked(). When this function is called it will set the current question to a new question.
  ```
