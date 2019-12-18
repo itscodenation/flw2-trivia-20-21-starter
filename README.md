@@ -22,11 +22,11 @@ Goal: Set up your your components
 
 - [ ] In your App.jsx file import the Question Component
 - [ ] Inside the render function call your Question component
-- [ ] Using the Question.jsx as a template create three more components called AnswerButton.jsx, QuestionText.jsx and ResetButton.jsx
-- [ ] In your Question.jsx file import your QuestionText, AnswerButton and ResetButton. Call each of the components in the render function. (You should have 4 AnswerButtons)
+- [ ] Using the Question.jsx as a template create three more components called AnswerButton.jsx, QuestionText.jsx and NextButton.jsx
+- [ ] In your Question.jsx file import your QuestionText, AnswerButton and NextButton. Call each of the components in the render function. (You should have 4 AnswerButtons)
 - [ ] The QuestionText should render a div with the text of any question of your choosing
 - [ ] The AnswerButton should should render a div with the text of any question of your choosing
-- [ ] The ResetButton should should render a div with the text "Reset"
+- [ ] The NextButton should should render a div with the text "Next"
 - [ ] Style these in any way you choose.
 
 ### Day 3: Use Multiple Components to Create Complex Layout
