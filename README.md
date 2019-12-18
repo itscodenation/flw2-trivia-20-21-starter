@@ -178,9 +178,9 @@ class App extends Component {
 
 ### Day 6: Create Components to React to a User's Input and Update Application State 
 
-- [ ] In your App.jsx create a method function call  _onResetButtonClicked(). When this function is called it will set the current question to a new question.
+- [ ] In your App.jsx create a method function call  _onNextButtonClicked(). When this function is called it will set the current question to a new question.
  ```
-  _onResetButtonClicked(){
+  _onNextButtonClicked(){
     let randomQuestion = getRandomQuestion(this.state.questions)
     this.setState({
       currentQuestion: randomQuestion,
@@ -192,22 +192,22 @@ class App extends Component {
   ```
   <Question 
     ...
-    resetButtonClicked={()=>this.onResetButtonClicked()}
+    nextButtonClicked={()=>this.onNextButtonClicked()}
   />
   ```
 - [ ] In Question.jsx keep passing it down through props
   ```
-    <ResetButton 
-          resetButtonClicked={this.props.resetButtonClicked}
+    <NextButton 
+          nextButtonClicked={this.props.nextButtonClicked}
     />
   ```
 - [ ] In AnswerButton.jsx we can add it to the onClick function
   ```
     return (
-      <div className="reset-button"
-        onClick={this.props.resetButtonClicked}
+      <div className="next-button"
+        onClick={this.props.nextButtonClicked}
       >
-        Reset
+        Next
       </div>
     );
   ```
