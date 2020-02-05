@@ -5,8 +5,18 @@
     ]
 },
  "Math":{},
- "Science": {},
- "English":{},
+ "Science": {
+     "Question": "What's the formula for centripetal force?",
+     "Answer": [
+         {},{},{},{}
+     ]
+ },
+ "English":{
+     "Question": "Who created The Crucible?",
+     "Answer": [
+         {},{},{},{}
+     ]
+ }
 
     
 } 
