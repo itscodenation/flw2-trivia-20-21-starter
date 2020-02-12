@@ -4,7 +4,12 @@
         {},{},{},{}
     ]
 },
- "Math":{},
+ "Math":{
+    "Question": "Solve for y. 34y-2x=12x-y",
+    "Answer": [
+        {},{},{},{}
+    ]
+ },
  "Science": {
      "Question": "What's the formula for centripetal force?",
      "Answer": [
@@ -20,11 +25,4 @@
 
     
 } 
- "Science":{
-    "Question": "What’s the formula for centripetal force?",
-    "Answer": [
-        {},{},{},{}
-    ]
- }
-   
-} 
+
