@@ -30,6 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "node-pre-gyp": "latest"
   }
 }
