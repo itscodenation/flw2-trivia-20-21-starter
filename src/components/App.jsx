@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "../css/App.css";
-// import components here
+import data from "../sample_data.json";
 
 function App() {
   return <div className="app">Trivia!</div>;
