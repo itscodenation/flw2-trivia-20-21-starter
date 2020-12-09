@@ -2,56 +2,49 @@
 
 ## Project Description
 
-In this unit, coders will work in groups to build a project using HTML, CSS, REACT, and Firebase. Their task is to build out the front-end for a Kahoot style question game that displays a question and the possible answers, allows a user to choose answer and determine whether they are right or wrong. This project is intended to highlight some important aspects of goal setting and project management. The project will culminate in a final presentation.
+In this unit, coders will work in groups to build a project using HTML, CSS, React. Their task is to build out the front-end for a Kahoot style question game that displays a question and the possible answers, allows a user to choose answer and determine whether they are right or wrong.
 
 ====
-### Day 1: Project Setup and Introduction to Visual Studio Code
-Goal: Set up your project, view the live running app, and build a simple component.
 
-- [ ] Use your [Outline and Planning Doc](https://docs.google.com/document/d/1oiyYdTcO2RxbE-2yq5KmeZpthExzHCNrgrVGtT47yOg/edit) to plan your project.
-- [ ] Go to the repository at https://github.com/itscodenation/trivia.
-- [ ] Fork the repository to your github account and clone to a new workspace.
-- [ ] Add, commit, and push your changes.
-- [ ] To set up your app, in your terminal type `npm install`.
-- [ ] To run your app, in your terminal type `npm start` this runs the app in the development mode. Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- [ ] Use any remaining time to begin working on your project.
+### Day 1: React Components and props
 
-====
-### Day 2: Use classes to represent data models
-Goal: Set up the main component.
+Goal: Render the question from sample_data.json on the screen.
 
-- [ ] Create the Question class to store the data from the sample objects.
-- [ ] Style the component in any way you choose.
+- [ ] In App.jsx, create a Question component.
+- [ ] Add props to <Question /> with the text "Question goes here".
+- [ ] Render <Question /> inside of App.
+- [ ] Replace "Question goes here" with the `question.text` field found in data.
+- [ ] BONUS: Add styling to your app.
 
-### Day 3: Use multiple components to create a complex layout
-Goal: Set up the other necessary components.
+### Day 2.0: Nested components
 
-- [ ] Use the sample data to display a question and its answer options by creating components and using props.
-- [ ] Make the answers clickable.
-- [ ] Use your remaining time to style your project.
+Goal: Render the answer choices from sample_data.json on the screen.
 
-### Day 4: Read complex data from firebase
-Goal: Work with external systems.
+- [ ] In App.jsx, create an Answer component.
+- [ ] Add props to <Answer /> with the text "Answer goes here".
+- [ ] Render <Answer /> inside of App.
+- [ ] Refactor to use map to map over all answer choices.
 
-- [ ] Replace sample data with firebase data to display the questions in your components
+### Day 2.5: State
 
-### Day 5: Use unidirectional data flow to pass down state
-Goal: Set up communication between components.
+Goal: Render a button on the screen that reveals the correct answer when clicked.
 
-- [ ] Set the initial state of your app component.
-- [ ] Use props to pass state to your child components.
-- [ ] Update App state from your child components to show which answer is correct.
+- [ ] Add state to the App component using the `useState` React hook to keep track of if the question is answered.
+- [ ] Add a button to the App component that updates state to `isAnswered` when clicked.
+- [ ] Set the state of `isAnswered` to display the correct answer choice.
 
-### Day 6: Project work day
-- [ ] Finish your project.
+### Day 3.0: Event handlers
 
-### Day 7: Project work day
-- [ ] Finish your project.
+Goal: Add a "Next Question" button that renders the next question when clicked.
 
-### Day 8: Presentation Preperation Day
-- [ ] Use the [Presentaion Guidelines](https://docs.google.com/document/d/1ot54zTTJo7m7dMaN-yTZH6Y-kymEyNSJ4jLzNwLuskg/edit) and [Pitch Rubric](https://docs.google.com/document/d/1an_aanEdOoYftxjqcGB-0IxkW2BVGY5sH5SlJv9weBU/edit) .
+
+### Day 3.5: Event handlers
+
+Goal: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
+
 
 ### Extensions!
+
 - [ ] Make a timer that resets the game when the timer runs out.
 - [ ] Make a counter that keeps track of how many times you've guessed the correct answer.
 - [ ] Change the color of the answer buttons when the user guesses. For example turn the button with the correct answer to green.
