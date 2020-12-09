@@ -16,7 +16,7 @@ Goal: Render the question from sample_data.json on the screen.
 - [ ] Replace "Question goes here" with the `question.text` field found in data.
 - [ ] BONUS: Add styling to your app.
 
-![Day 1 goal](https://i.imgur.com/eTZAXGk.png)
+>![Day 1 goal](https://i.imgur.com/eTZAXGk.png)
 
 ### Day 2.0: Nested components
 
