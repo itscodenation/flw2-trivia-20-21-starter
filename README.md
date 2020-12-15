@@ -32,7 +32,7 @@ Goal: Render the answer choices from sample_data.json on the screen.
 
 - [ ] In App.jsx, create an Answer component.
 - [ ] Add props to <Answer /> with the text "Answer goes here".
-- [ ] Render <Answer /> inside of <Question />.
+- [ ] Render `<Answer />` inside of <Question />.
   - [ ] Pass props for the answer choices into <Question />.
   - [ ] Use those props to render the Answer components inside Question to display the answer choices.
 - [ ] Refactor to use map to map over all answer choices.
