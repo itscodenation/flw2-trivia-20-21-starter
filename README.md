@@ -6,7 +6,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ====
 
-### Day 1: React Components and props
+### Day 1.0: React Components and props
 
 Goal: Render the question from sample_data.json on the screen.
 
@@ -18,13 +18,23 @@ Goal: Render the question from sample_data.json on the screen.
 
 >![Day 1 goal](https://i.imgur.com/eTZAXGk.png)
 
+### Day 1.5: React Components
+
+Goal: Render a "Next Question" button on the screen.
+
+- [ ] In App.jsx, create a NextQuestion component.
+- [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
+- [ ] Render <NextQuestion /> inside of App.
+
 ### Day 2.0: Nested components
 
 Goal: Render the answer choices from sample_data.json on the screen.
 
 - [ ] In App.jsx, create an Answer component.
 - [ ] Add props to <Answer /> with the text "Answer goes here".
-- [ ] Render <Answer /> inside of App.
+- [ ] Render <Answer /> inside of <Question />.
+  - [ ] Pass props for the answer choices into <Question />.
+  - [ ] Use those props to render the Answer components inside Question to display the answer choices.
 - [ ] Refactor to use map to map over all answer choices.
 
 >![Day 2.0 goal](https://i.imgur.com/Q191NRq.png)
