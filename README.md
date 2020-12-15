@@ -8,12 +8,13 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ### Day 1.0: React Components and props
 
-Goal: Render the question from sample_data.json on the screen.
+Goal: Render a question from sample_data.json on the screen.
 
+- [ ] In App.jsx in the App component, add a variable to set the current question number to 0.
 - [ ] In App.jsx, create a Question component.
 - [ ] Add props to <Question /> with the text "Question goes here".
 - [ ] Render <Question /> inside of App.
-- [ ] Replace "Question goes here" with the `question.text` field found in data.
+- [ ] Replace "Question goes here" with the `question.text` field found in data for the first question.
 - [ ] BONUS: Add styling to your app.
 
 >![Day 1 goal](https://i.imgur.com/eTZAXGk.png)
@@ -52,9 +53,15 @@ Goal: Render a button on the screen that reveals the correct answer when clicked
 
 ### Day 3.0: Event handlers
 
-Goal: Add a "Next Question" button that renders the next question when clicked.
+Goal: Add functionality to your "Next Question" button so that it renders the next question when clicked.
 
-- [ ] Use the click handler from 
+- [ ] Add state to the App component using the `useState` React hook to keep track of the current question number.
+  - [ ] Replace the current question number variable that you wrote in Day 1.
+- [ ] Add a prop to the NextQuestion component that updates state to the next question number.
+- [ ] Pass your prop to the button element inside `<NextQuestion />` so that when it is clicked, the next question is displayed on the screen.
+- [ ] Check that every part of your question and answer updates to reflect the current question number.
+- [ ] BONUS: Add a ternary operator to hide `<NextQuestion />` when there are no more next questions.
+
 
 ### Day 3.5: Event handlers
 
