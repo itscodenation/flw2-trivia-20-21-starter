@@ -54,6 +54,7 @@ Goal: Render a button on the screen that reveals the correct answer when clicked
 
 Goal: Add a "Next Question" button that renders the next question when clicked.
 
+- [ ] Use the click handler from 
 
 ### Day 3.5: Event handlers
 
