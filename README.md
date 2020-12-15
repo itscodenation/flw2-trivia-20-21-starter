@@ -67,6 +67,9 @@ Goal: Add functionality to your "Next Question" button so that it renders the ne
 
 Goal: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
 
+- Add an event handler to the Answer components inside the map.
+- Below state (above return) write a condtional that checks if the answer clicked is the correct answer and displays text.
+- Create a variable and display in the return.
 
 ### Extensions!
 
