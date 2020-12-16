@@ -57,8 +57,8 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 - [ ] Add state to `<App />` using the `useState` React hook to keep track of the current question number.
   - [ ] Replace the current question number variable that you wrote in Day 1.
-- [ ] Add a prop to `<NextQuestion />` that updates state to the next question number.
-- [ ] Pass your prop to the button element inside `<NextQuestion />` so that when it is clicked, the next question is displayed on the screen.
+- [ ] Create a function that updates the state to the next question number.
+- [ ] Make a prop on `<NextQuestion />` to pass the prop down to the button element to call that function when the button is clicked.
 - [ ] Check that every part of your question and answer updates to reflect the current question number.
 - [ ] Reset the state of `isAnswered` when the Next Question button is clicked.
 - [ ] BONUS: Add a [ternary operator](http://mzl.la/3nCo8bq) to hide `<NextQuestion />` when there are no more next questions.
