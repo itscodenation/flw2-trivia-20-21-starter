@@ -8,7 +8,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ## Day 1: React Components and props
 
-### Goal: Render a question from sample_data.json on the screen.
+### Goal 1: Render a question from sample_data.json on the screen.
 
 - [ ] In App.jsx in the App component, add a variable to set the current question number to 0.
 - [ ] In App.jsx, create a Question component.
@@ -19,7 +19,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 >![Day 1.0 goal](https://i.imgur.com/eTZAXGk.png)
 
-### Goal: Render a "Next Question" button on the screen.
+### Goal 2: Render a "Next Question" button on the screen.
 
 - [ ] In App.jsx, create a NextQuestion component.
 - [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
@@ -28,9 +28,9 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 >![Day 1.5 goal](https://i.imgur.com/o4MzPjL.png)
 
 
-## Day 2.0: Nested components and state
+## Day 2: Nested components and state
 
-## Goal: Render the answer choices from sample_data.json on the screen.
+## Goal 1: Render the answer choices from sample_data.json on the screen.
 
 - [ ] In App.jsx, create an Answer component.
 - [ ] Add props to `<Answer />` with the text "Answer goes here".
@@ -41,7 +41,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 >![Day 2.0 goal](https://i.imgur.com/VpA8eRc.png)
 
-## Goal: Render a button on the screen that reveals the correct answer when clicked.
+## Goal 2: Render a button on the screen that reveals the correct answer when clicked.
 
 - [ ] Add state to `<App />` using the `useState` React hook to keep track of if the question is answered.
 - [ ] Add a button to the App component that updates state to `isAnswered` when clicked.
@@ -53,7 +53,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ## Day 3.0: Event handlers
 
-### Goal: Add functionality to your "Next Question" button so that it renders the next question when clicked.
+### Goal 1: Add functionality to your "Next Question" button so that it renders the next question when clicked.
 
 - [ ] Add state to `<App />` using the `useState` React hook to keep track of the current question number.
   - [ ] Replace the current question number variable that you wrote in Day 1.
@@ -66,7 +66,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 >![Day 3.0 goal](https://i.imgur.com/fetraPF.png)
 >![Day 3.0 with bonus](https://i.imgur.com/GruM8g2.png)
 
-### Goal: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
+### Goal 2: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
 
 - [ ] Inside the map function for the Answer components, add an event handler.
 - [ ] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
@@ -74,6 +74,8 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
   - [ ] Display text on the screen telling the user what the correct answer was.
   - [ ] HINT: To do this, you should create a variable and display that variable inside your return statement.
   - [ ] BONUS: Use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of string concatenation.
+
+### Goal 3: Export
 
 >![Day 3.5 correct](https://i.imgur.com/HC7M6LH.png)
 >![Day 3.5 wrong](https://i.imgur.com/DWQu3bb.png)
