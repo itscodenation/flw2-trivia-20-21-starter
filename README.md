@@ -27,7 +27,7 @@ Goal: Render a "Next Question" button on the screen.
 - [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
 - [ ] Render `<NextQuestion />` inside of App.
 
->![Day 1.5 goal]()
+>![Day 1.5 goal](https://i.imgur.com/o4MzPjL.png)
 
 ### Day 2.0: Nested components
 
