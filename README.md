@@ -6,9 +6,9 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ====
 
-### Day 1.0: React Components and props
+## Day 1: React Components and props
 
-Goal: Render a question from sample_data.json on the screen.
+### Goal: Render a question from sample_data.json on the screen.
 
 - [ ] In App.jsx in the App component, add a variable to set the current question number to 0.
 - [ ] In App.jsx, create a Question component.
@@ -19,9 +19,7 @@ Goal: Render a question from sample_data.json on the screen.
 
 >![Day 1.0 goal](https://i.imgur.com/eTZAXGk.png)
 
-### Day 1.5: React Components
-
-Goal: Render a "Next Question" button on the screen.
+### Goal: Render a "Next Question" button on the screen.
 
 - [ ] In App.jsx, create a NextQuestion component.
 - [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
