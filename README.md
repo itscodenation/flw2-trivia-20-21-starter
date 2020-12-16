@@ -27,7 +27,7 @@ Goal: Render a "Next Question" button on the screen.
 - [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
 - [ ] Render `<NextQuestion />` inside of App.
 
->![Day 1.5 goal](https://i.imgur.com/VpA8eRc.png)
+>![Day 1.5 goal]()
 
 ### Day 2.0: Nested components
 
@@ -40,7 +40,7 @@ Goal: Render the answer choices from sample_data.json on the screen.
   - [ ] Use those props to render the Answer components inside `<Question />` to display the answer choices.
 - [ ] Refactor to use map to map over all answer choices.
 
->![Day 2.0 goal](https://i.imgur.com/Q191NRq.png)
+>![Day 2.0 goal](https://i.imgur.com/VpA8eRc.png)
 
 ### Day 2.5: State
 
