@@ -62,6 +62,7 @@ Goal: Add functionality to your "Next Question" button so that it renders the ne
 - [ ] Add a prop to `<NextQuestion />` that updates state to the next question number.
 - [ ] Pass your prop to the button element inside `<NextQuestion />` so that when it is clicked, the next question is displayed on the screen.
 - [ ] Check that every part of your question and answer updates to reflect the current question number.
+- [ ] Reset the state of `isAnswered` when the Next Question button is clicked.
 - [ ] BONUS: Add a [ternary operator](http://mzl.la/3nCo8bq) to hide `<NextQuestion />` when there are no more next questions.
 
 
