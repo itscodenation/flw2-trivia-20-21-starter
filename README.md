@@ -17,7 +17,7 @@ Goal: Render a question from sample_data.json on the screen.
 - [ ] Replace "Question goes here" with the `question.text` field found in data for the first question.
 - [ ] BONUS: Add styling to your app.
 
->![Day 1 goal](https://i.imgur.com/eTZAXGk.png)
+>![Day 1.0 goal](https://i.imgur.com/eTZAXGk.png)
 
 ### Day 1.5: React Components
 
@@ -26,6 +26,8 @@ Goal: Render a "Next Question" button on the screen.
 - [ ] In App.jsx, create a NextQuestion component.
 - [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
 - [ ] Render `<NextQuestion />` inside of App.
+
+>![Day 1.5 goal](https://i.imgur.com/VpA8eRc.png)
 
 ### Day 2.0: Nested components
 
