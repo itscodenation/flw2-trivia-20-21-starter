@@ -27,9 +27,10 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 >![Day 1.5 goal](https://i.imgur.com/o4MzPjL.png)
 
-### Day 2.0: Nested components
 
-Goal: Render the answer choices from sample_data.json on the screen.
+## Day 2.0: Nested components and state
+
+## Goal: Render the answer choices from sample_data.json on the screen.
 
 - [ ] In App.jsx, create an Answer component.
 - [ ] Add props to `<Answer />` with the text "Answer goes here".
@@ -40,9 +41,7 @@ Goal: Render the answer choices from sample_data.json on the screen.
 
 >![Day 2.0 goal](https://i.imgur.com/VpA8eRc.png)
 
-### Day 2.5: State
-
-Goal: Render a button on the screen that reveals the correct answer when clicked.
+## Goal: Render a button on the screen that reveals the correct answer when clicked.
 
 - [ ] Add state to `<App />` using the `useState` React hook to keep track of if the question is answered.
 - [ ] Add a button to the App component that updates state to `isAnswered` when clicked.
@@ -51,9 +50,10 @@ Goal: Render a button on the screen that reveals the correct answer when clicked
 >![Day 2.5 goal - unanswered](https://i.imgur.com/JI6GroE.png)
 >![Day 2.5 goal - answered](https://i.imgur.com/rufYX84.png)
 
-### Day 3.0: Event handlers
 
-Goal: Add functionality to your "Next Question" button so that it renders the next question when clicked.
+## Day 3.0: Event handlers
+
+### Goal: Add functionality to your "Next Question" button so that it renders the next question when clicked.
 
 - [ ] Add state to `<App />` using the `useState` React hook to keep track of the current question number.
   - [ ] Replace the current question number variable that you wrote in Day 1.
@@ -66,10 +66,7 @@ Goal: Add functionality to your "Next Question" button so that it renders the ne
 >![Day 3.0 goal](https://i.imgur.com/fetraPF.png)
 >![Day 3.0 with bonus](https://i.imgur.com/GruM8g2.png)
 
-
-### Day 3.5: Event handlers
-
-Goal: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
+### Goal: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
 
 - [ ] Inside the map function for the Answer components, add an event handler.
 - [ ] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
@@ -81,7 +78,8 @@ Goal: Add functionality so that when the user clicks on an answer choice, the co
 >![Day 3.5 correct](https://i.imgur.com/HC7M6LH.png)
 >![Day 3.5 wrong](https://i.imgur.com/DWQu3bb.png)
 
-### Extensions!
+
+## Extensions!
 
 - [ ] Make a timer that resets the game when the timer runs out.
 - [ ] Make a counter that keeps track of how many times you've guessed the correct answer.
