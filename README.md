@@ -75,7 +75,12 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
   - [ ] HINT: To do this, you should create a variable and display that variable inside your return statement.
   - [ ] BONUS: Use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of string concatenation.
 
-### Goal 3: Export
+### Goal 3: Sort your Trivia app into separate files and import/export the components.
+
+- [ ] Create a new `.js` file inside the components folder for each of your components.
+- [ ] Move the code for your components into their new files.
+- [ ] Add an export to each of your components.
+- [ ] Import all of your components into the correct files.
 
 >![Day 3.5 correct](https://i.imgur.com/HC7M6LH.png)
 >![Day 3.5 wrong](https://i.imgur.com/DWQu3bb.png)
