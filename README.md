@@ -65,6 +65,9 @@ Goal: Add functionality to your "Next Question" button so that it renders the ne
 - [ ] Reset the state of `isAnswered` when the Next Question button is clicked.
 - [ ] BONUS: Add a [ternary operator](http://mzl.la/3nCo8bq) to hide `<NextQuestion />` when there are no more next questions.
 
+>![Day 3.0 goal](https://i.imgur.com/fetraPF.png)
+>![Day 3.0 with bonus](https://i.imgur.com/GruM8g2.png)
+
 
 ### Day 3.5: Event handlers
 
@@ -76,6 +79,9 @@ Goal: Add functionality so that when the user clicks on an answer choice, the co
   - [ ] Display text on the screen telling the user what the correct answer was.
   - [ ] HINT: To do this, you should create a variable and display that variable inside your return statement.
   - [ ] BONUS: Use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of string concatenation.
+
+>![Day 3.5 correct](https://i.imgur.com/HC7M6LH.png)
+>![Day 3.5 wrong](https://i.imgur.com/DWQu3bb.png)
 
 ### Extensions!
 
