@@ -50,8 +50,8 @@ Goal: Render a button on the screen that reveals the correct answer when clicked
 - [ ] Add a button to the App component that updates state to `isAnswered` when clicked.
 - [ ] Set the state of `isAnswered` to display the correct answer choice.
 
->![Day 2.5 goal - unanswered](https://i.imgur.com/p4vpcws.png)
->![Day 2.5 goal - answered](https://i.imgur.com/KB4zJCO.png)
+>![Day 2.5 goal - unanswered](https://i.imgur.com/JI6GroE.png)
+>![Day 2.5 goal - answered](https://i.imgur.com/rufYX84.png)
 
 ### Day 3.0: Event handlers
 
