@@ -51,7 +51,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 >![Day 2.5 goal - answered](https://i.imgur.com/rufYX84.png)
 
 
-## Day 3.0: Event handlers
+## Day 3: Event handlers
 
 ### Goal 1: Add functionality to your "Next Question" button so that it renders the next question when clicked.
 
