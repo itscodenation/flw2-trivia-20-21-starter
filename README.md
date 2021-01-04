@@ -69,6 +69,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 ### Goal 2: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
 
 - [ ] Inside the map function for the Answer components, add an event handler.
+  - [ ] HINT: Use props to pass down the state from `<App />`.
 - [ ] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
   - [ ] Display text on the screen telling the user if their answer choice was correct.
   - [ ] Display text on the screen telling the user what the correct answer was.
