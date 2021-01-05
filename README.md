@@ -30,7 +30,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ## Day 2: Nested components and state
 
-## Goal 1: Render the answer choices from sample_data.json on the screen.
+### Goal 1: Render the answer choices from sample_data.json on the screen.
 
 - [ ] In App.jsx, create an Answer component.
 - [ ] Add props to `<Answer />` with the text "Answer goes here".
@@ -41,7 +41,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 >![Day 2.0 goal](https://i.imgur.com/VpA8eRc.png)
 
-## Goal 2: Render a button on the screen that reveals the correct answer when clicked.
+### Goal 2: Render a button on the screen that reveals the correct answer when clicked.
 
 - [ ] Add state to `<App />` using the `useState` React hook to keep track of if the question is answered.
 - [ ] Add a button to the App component that updates state to `isAnswered` when clicked.
