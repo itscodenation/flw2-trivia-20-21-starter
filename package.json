@@ -2,7 +2,6 @@
   "name": "studio2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://itscodenation.github.io/trivia",
   "dependencies": {
     "firebase": "^5.11.1",
     "lodash": "^4.17.11",
