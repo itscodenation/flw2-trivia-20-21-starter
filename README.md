@@ -12,8 +12,8 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 - [ ] In App.jsx in the App component, add a variable to set the current question number to 0.
 - [ ] In App.jsx, create a Question component.
+- [ ] Render an instance of `<Question />` inside of App.
 - [ ] Add props to `<Question />` with the text "Question goes here".
-- [ ] Render `<Question />` inside of App.
 - [ ] Replace "Question goes here" with the `question.text` field found in data for the first question.
 - [ ] BONUS: Add styling to your app.
 
