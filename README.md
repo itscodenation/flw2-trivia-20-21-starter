@@ -24,7 +24,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 - [ ] In App.jsx, create a NextQuestion component.
 - [ ] Write the JSX to display a button for the user to click for the next question. (It will not work yet.)
-- [ ] Render `<NextQuestion />` inside of App.
+- [ ] Render an instance of `<NextQuestion />` inside of `<App />`.
 
 >![Day 1.5 goal](https://i.imgur.com/o4MzPjL.png)
 
@@ -34,8 +34,8 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 ### Goal 1: Render the answer choices from sample_data.json on the screen.
 
 - [ ] In App.jsx, create an Answer component.
+- [ ] Render an instance of `<Answer />` inside of `<Question />`.
 - [ ] Add props to `<Answer />` with the text "Answer goes here".
-- [ ] Render `<Answer />` inside of `<Question />`.
   - [ ] Pass props for the answer choices into `<Question />`.
   - [ ] Use those props to render the Answer components inside `<Question />` to display the answer choices.
 - [ ] Refactor to use map to map over all answer choices.
