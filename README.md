@@ -46,8 +46,8 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 - [ ] Using `useState` in `<App />`, create a boolean state variable called `answerDisplayed` to keep track of whether the correct answer is shown.
 - [ ] Add a button to the App component that will update the state to display the correct answer when it is clicked.
-  - [ ] HINT: Access the correct answer choice using `sample_data.json`.
 - [ ] Create an onClick function that sets the state to display the correct answer choice when your button is clicked.
+  - [ ] HINT: Access the correct answer choice using `sample_data.json`.
 
 >![Day 2.5 goal - unanswered](https://i.imgur.com/JI6GroE.png)
 >![Day 2.5 goal - answered](https://i.imgur.com/rufYX84.png)
