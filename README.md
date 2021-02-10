@@ -44,8 +44,9 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 
 ### Goal 2: Render a button on the screen that reveals the correct answer when clicked.
 
-- [ ] Using `useState` in `<App />`, create a boolean state variable called `isAnswered` to keep track of whether the correct answer is revealed.
+- [ ] Using `useState` in `<App />`, create a boolean state variable called `answerDisplayed` to keep track of whether the correct answer is shown.
 - [ ] Add a button to the App component that will update the state to display the correct answer when it is clicked.
+  - [ ] HINT: Access the correct answer choice using `sample_data.json`.
 - [ ] Create an onClick function that sets the state to display the correct answer choice when your button is clicked.
 
 >![Day 2.5 goal - unanswered](https://i.imgur.com/JI6GroE.png)
@@ -61,7 +62,7 @@ In this unit, coders will work in groups to build a project using HTML, CSS, Rea
 - [ ] Create a function that updates the state to the next question number.
 - [ ] Make a prop on `<NextQuestion />` to pass the prop down to the button element to call that function when the button is clicked.
 - [ ] Check that every part of your question and answer updates to reflect the current question number.
-- [ ] Reset the state of `isAnswered` when the Next Question button is clicked so the correct answer stops being displayed.
+- [ ] Reset the state of `answerDisplayed` when the Next Question button is clicked so the correct answer stops being displayed.
 - [ ] BONUS: Add [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) to hide `<NextQuestion />` when there are no more next questions.
 
 >![Day 3.0 goal](https://i.imgur.com/fetraPF.png)
