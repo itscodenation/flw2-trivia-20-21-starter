@@ -1,4 +1,4 @@
-# Trivia App Starter Code!
+# react-trivia-starter
 
 ## Project Description
 
